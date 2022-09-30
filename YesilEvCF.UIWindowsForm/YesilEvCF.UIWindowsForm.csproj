@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53D47F6A-EE2A-45AA-87C1-41D3933E4AA5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>YesilEvCF.UIWindowsForm</RootNamespace>
+    <AssemblyName>YesilEvCF.UIWindowsForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminProductAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminProductAdd.Designer.cs">
+      <DependentUpon>FormAdminProductAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminProductDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminProductDelete.Designer.cs">
+      <DependentUpon>FormAdminProductDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminProductList.Designer.cs">
+      <DependentUpon>FormAdminProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminUpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminUpdateProduct.Designer.cs">
+      <DependentUpon>FormAdminUpdateProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminUserAdd.Designer.cs">
+      <DependentUpon>FormAdminUserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminUserDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminUserDelete.Designer.cs">
+      <DependentUpon>FormAdminUserDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminUserList.Designer.cs">
+      <DependentUpon>FormAdminUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminUserUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminUserUpdate.Designer.cs">
+      <DependentUpon>FormAdminUserUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBlackList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBlackList.Designer.cs">
+      <DependentUpon>FormBlackList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManifacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManifacture.Designer.cs">
+      <DependentUpon>FormManifacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductAdd.Designer.cs">
+      <DependentUpon>FormProductAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductBarcode.Designer.cs">
+      <DependentUpon>FormProductBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductIngredient.Designer.cs">
+      <DependentUpon>FormProductIngredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegister.Designer.cs">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearch.Designer.cs">
+      <DependentUpon>FormSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchHistory.Designer.cs">
+      <DependentUpon>FormSearchHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateEmail.Designer.cs">
+      <DependentUpon>FormUpdateEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdatePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdatePassword.Designer.cs">
+      <DependentUpon>FormUpdatePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateProduct.Designer.cs">
+      <DependentUpon>FormUpdateProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateUser.Designer.cs">
+      <DependentUpon>FormUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserProfile.Designer.cs">
+      <DependentUpon>FormUserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminProductAdd.resx">
+      <DependentUpon>FormAdminProductAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminProductDelete.resx">
+      <DependentUpon>FormAdminProductDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminProductList.resx">
+      <DependentUpon>FormAdminProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminUpdateProduct.resx">
+      <DependentUpon>FormAdminUpdateProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminUserAdd.resx">
+      <DependentUpon>FormAdminUserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminUserDelete.resx">
+      <DependentUpon>FormAdminUserDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminUserList.resx">
+      <DependentUpon>FormAdminUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminUserUpdate.resx">
+      <DependentUpon>FormAdminUserUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBlackList.resx">
+      <DependentUpon>FormBlackList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManifacture.resx">
+      <DependentUpon>FormManifacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductAdd.resx">
+      <DependentUpon>FormProductAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductBarcode.resx">
+      <DependentUpon>FormProductBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductIngredient.resx">
+      <DependentUpon>FormProductIngredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegister.resx">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearch.resx">
+      <DependentUpon>FormSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchHistory.resx">
+      <DependentUpon>FormSearchHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateEmail.resx">
+      <DependentUpon>FormUpdateEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdatePassword.resx">
+      <DependentUpon>FormUpdatePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateProduct.resx">
+      <DependentUpon>FormUpdateProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateUser.resx">
+      <DependentUpon>FormUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserProfile.resx">
+      <DependentUpon>FormUserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YesilEvCF.Core\YesilEvCF.Core.csproj">
+      <Project>{5ED04A27-7556-4FF9-AAED-DE5A844909A9}</Project>
+      <Name>YesilEvCF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YesilEvCF.DAL\YesilEvCF.DAL.csproj">
+      <Project>{D95830BD-878A-4946-BFFF-7768E06D7577}</Project>
+      <Name>YesilEvCF.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YesilEvCF.DTOs\YesilEvCF.DTOs.csproj">
+      <Project>{48C95913-8BDF-45A9-9DF3-497834DC4343}</Project>
+      <Name>YesilEvCF.DTOs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\baby_shampoo_500ml.jpg" />
+    <Content Include="Images\back_arrow_icon.png" />
+    <Content Include="Images\blacklist_icon.png" />
+    <Content Include="Images\chain_icon.png" />
+    <Content Include="Images\dismacun-arka_.jpg" />
+    <Content Include="Images\dismacun-on_.jpg" />
+    <Content Include="Images\email_icon.png" />
+    <Content Include="Images\favorite_icon.png" />
+    <Content Include="Images\fav_icon.png" />
+    <Content Include="Images\form_icon.png" />
+    <Content Include="Images\garbage_trash_icon.png" />
+    <Content Include="Images\green_leaf_icon.png" />
+    <Content Include="Images\home_icon.png" />
+    <Content Include="Images\login_password_icon.png" />
+    <Content Include="Images\login_user_icon.png" />
+    <Content Include="Images\login_user_profile_account_password_icon.png" />
+    <Content Include="Images\logout_session_icon.png" />
+    <Content Include="Images\orange_leaf_icon.png" />
+    <Content Include="Images\password_icon.png" />
+    <Content Include="Images\profile-icon.png" />
+    <Content Include="Images\red_leaf_icon.png" />
+    <Content Include="Images\sort_icon.png" />
+    <Content Include="Images\star_icon.png" />
+    <Content Include="Images\update_icon.png" />
+    <Content Include="Images\urunarka.jpg" />
+    <Content Include="Images\user_icon.png" />
+    <Content Include="Images\yellow_leaf_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
